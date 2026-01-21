@@ -13,35 +13,39 @@
 📚 Project
 - [Billboard & MusicOSet Audio Feature Analysis (IJC437 Project)](https://github.com/nishika-23/Billboard-Music-Trends-Analysis)
 
-⚙️ How to Run the Code
-
-To replicate this analysis and generate all outputs on your own computer:
-
-🧾 Step 1 — Download or clone the repository
-You can either:
-- Click the green **Code** button on this page → “Download ZIP”,  
-  then extract the ZIP file to your Desktop,  
-  **OR**
-- If you use Git, open Terminal or Git Bash and run:
-  git clone https://github.com/nishika-23/Billboard-Music-Trends-Analysis.git
-  
-🧭 Step 2 — Open in RStudio
-1. Open **RStudio**  
-2. Go to **File → Open Project…**  
-3. Select the file: `Billboard-Music-Trends-Analysis.Rproj` (or open the folder manually)
-
-▶️ Step 3 — Run the main R script
-- In the R console, type: 
-  source("IDS_final.R")
-  
+How to Run the Code in RStudio
+1. Clone or Download the Repository
+🔹 Option A — Clone via Git (recommended)
+If Git is installed on your computer:
+git clone https://github.com/nishika-23/Billboard-Music-Trends-Analysis.git
+Then open the cloned folder in RStudio.
+🔹 Option B — Download ZIP
+If you don’t use Git:
+Click the green “Code” button on this GitHub page.
+Select “Download ZIP.”
+Extract the ZIP file to your Downloads or Desktop.
+2. Open RStudio and Set the Working Directory
+Once the files are extracted, tell R where the project lives.
+# Replace the path below with your folder location
+setwd("/Users/nishikathakkar/Downloads/Billboard-Music-Trends-Analysis")
+# Check it worked:
+getwd()
+✅ You should see:
+"/Users/nishikathakkar/Downloads/Billboard-Music-Trends-Analysis"
+If you see that path, R is now “looking” in the correct folder.
+3. Run the Analysis
+Now simply run:
+source("IDS_final.R")
 The script will automatically:
-- Clean and process the dataset  
-- Create visualisations in the `plots/` folder  
-- Save summary tables in `output_tables/`  
-- Store model results in `output_model_summary.txt`
-  
-  Once completed, you’ll see a message in the console confirming:
-  Finished: CSVs in working folder, plots in /plots, model summary + performance table saved.
+-Load the dataset (billboard_24years_lyrics_spotify.csv)
+-Clean and process the data
+-Generate 10 figures (saved in /plots)
+-Create 8 summary tables (saved in /output_tables)
+-Produce the model output file (output_model_summary.txt)
+You’ll see messages like:
+Table 1 (Variable Descriptions) saved as output_variable_description.csv
+Finished: CSVs in working folder, plots in /plots, model summary + performance table saved.
+That means your analysis completed successfully ✅
 
   **Note:**  
   Make sure your R has these packages installed before running:
