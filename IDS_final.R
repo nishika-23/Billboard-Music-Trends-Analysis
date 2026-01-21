@@ -400,7 +400,8 @@ fig1 <- ggplot(fig1_data,
 save_figure(fig1, "fig1_two_feature_scatter.png", w = 9, h = 5)
 print(fig1)
 
-# ---------- Figure 2: feature trends by success ----------
+
+#-------- Figure 2: feature trends by success ----------
 audio_time_success <- full_data %>%
   group_by(year, hit_group) %>%
   summarise(
@@ -465,7 +466,7 @@ fig3 <- ggplot(audio_long_form, aes(hit_group, value, fill = hit_group)) +
 save_figure(fig3, "fig3_feature_boxplots_by_success.png", w = 10, h = 7)
 print(fig3)
 
-# ---------- Figure 4: yearly counts by success group ----------
+#---------- Figure 4: yearly counts by success group ----------
 fig4_data <- full_data %>%
   count(year, hit_group)
 
