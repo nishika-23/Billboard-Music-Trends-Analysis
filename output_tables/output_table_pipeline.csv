@@ -1,0 +1,5 @@
+dataset,n_rows
+Billboard raw,3397
+Billboard cleaned,483
+MusicOSet song table,20405
+Joined master,483
