@@ -1,0 +1,57 @@
+=== Logistic regression summary ===
+
+Call:
+glm(formula = hit_group ~ danceability + energy + loudness + 
+    tempo + valence, family = binomial(), data = train_set)
+
+Coefficients:
+              Estimate Std. Error z value Pr(>|z|)  
+(Intercept)   0.260239   1.804883   0.144   0.8854  
+danceability -0.348167   1.359052  -0.256   0.7978  
+energy       -0.164057   1.452357  -0.113   0.9101  
+loudness      0.100156   0.099625   1.005   0.3147  
+tempo        -0.011078   0.006217  -1.782   0.0748 .
+valence      -0.196996   0.917331  -0.215   0.8300  
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 274.37  on 387  degrees of freedom
+Residual deviance: 269.37  on 382  degrees of freedom
+AIC: 281.37
+
+Number of Fisher Scoring iterations: 5
+
+
+=== Confusion matrix ===
+Confusion Matrix and Statistics
+
+          Reference
+Prediction NotTop10 Top10
+  NotTop10       85    10
+  Top10           0     0
+                                          
+               Accuracy : 0.8947          
+                 95% CI : (0.8149, 0.9484)
+    No Information Rate : 0.8947          
+    P-Value [Acc > NIR] : 0.583169        
+                                          
+                  Kappa : 0               
+                                          
+ Mcnemar's Test P-Value : 0.004427        
+                                          
+            Sensitivity : 0.0000          
+            Specificity : 1.0000          
+         Pos Pred Value :    NaN          
+         Neg Pred Value : 0.8947          
+             Prevalence : 0.1053          
+         Detection Rate : 0.0000          
+   Detection Prevalence : 0.0000          
+      Balanced Accuracy : 0.5000          
+                                          
+       'Positive' Class : Top10           
+                                          
+
+=== AUC ===
+Area under the curve: 0.6176
