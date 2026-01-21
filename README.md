@@ -35,6 +35,7 @@ setwd("/Users/nishikathakkar/Downloads/Billboard-Music-Trends-Analysis")
 
 # Check it worked:
 getwd()
+
 ✅ You should see:
 "/Users/nishikathakkar/Downloads/Billboard-Music-Trends-Analysis"
 If you see that path, R is now “looking” in the correct folder.
@@ -43,23 +44,23 @@ If you see that path, R is now “looking” in the correct folder.
 Now simply run:
 source("IDS_final.R")
 The script will automatically:
--Load the dataset (billboard_24years_lyrics_spotify.csv)
--Clean and process the data
--Generate 10 figures (saved in /plots)
--Create 8 summary tables (saved in /output_tables)
--Produce the model output file (output_model_summary.txt)
+- Load the dataset (billboard_24years_lyrics_spotify.csv)
+- Clean and process the data
+- Generate 10 figures (saved in /plots)
+- Create 8 summary tables (saved in /output_tables)
+- Produce the model output file (output_model_summary.txt)
 
 You’ll see messages like:
-Table 1 (Variable Descriptions) saved as output_variable_description.csv
-Finished: CSVs in working folder, plots in /plots, model summary + performance table saved.
-That means your analysis completed successfully ✅
+- Table 1 (Variable Descriptions) saved as output_variable_description.csv
+- Finished: CSVs in working folder, plots in /plots, model summary + performance table saved.
+  That means your analysis completed successfully ✅
 
-**Note:**  
-Make sure your R has these packages installed before running:
-'tidyverse`, `ggplot2`, `readr`, `dplyr`, `pROC`, `caret`, `cowplot`, and `vroom`.
+  **Note:**  
+  Make sure your R has these packages installed before running:
+  'tidyverse`, `ggplot2`, `readr`, `dplyr`, `pROC`, `caret`, `cowplot`, and `vroom`.
 
-If not, install them by running:
-install.packages(c("tidyverse","ggplot2","readr","dplyr","pROC","caret","cowplot","vroom"))
+  If not, install them by running:
+  install.packages(c("tidyverse","ggplot2","readr","dplyr","pROC","caret","cowplot","vroom"))
   
   
 
