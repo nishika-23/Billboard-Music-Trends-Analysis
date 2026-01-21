@@ -26,8 +26,10 @@ If you don’t use Git:
 Click the green “Code” button on this GitHub page.
 Select “Download ZIP.”
 Extract the ZIP file to your Downloads or Desktop.
+
 2. Open RStudio and Set the Working Directory
 Once the files are extracted, tell R where the project lives.
+
 # Replace the path below with your folder location
 setwd("/Users/nishikathakkar/Downloads/Billboard-Music-Trends-Analysis")
 
@@ -52,12 +54,12 @@ Table 1 (Variable Descriptions) saved as output_variable_description.csv
 Finished: CSVs in working folder, plots in /plots, model summary + performance table saved.
 That means your analysis completed successfully ✅
 
-  **Note:**  
-  Make sure your R has these packages installed before running:
-  'tidyverse`, `ggplot2`, `readr`, `dplyr`, `pROC`, `caret`, `cowplot`, and `vroom`.
+**Note:**  
+Make sure your R has these packages installed before running:
+'tidyverse`, `ggplot2`, `readr`, `dplyr`, `pROC`, `caret`, `cowplot`, and `vroom`.
 
-  If not, install them by running:
-  install.packages(c("tidyverse","ggplot2","readr","dplyr","pROC","caret","cowplot","vroom"))
+If not, install them by running:
+install.packages(c("tidyverse","ggplot2","readr","dplyr","pROC","caret","cowplot","vroom"))
   
   
 
