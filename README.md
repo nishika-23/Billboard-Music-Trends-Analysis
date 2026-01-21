@@ -10,7 +10,7 @@
 - Statistical Analysis & Reporting
 - Reproducible Research and R Markdown
 
-📚 Projects
+📚 Project
 - [Billboard & MusicOSet Audio Feature Analysis (IJC437 Project)](https://github.com/nishika-23/Billboard-Music-Trends-Analysis)
 
 ⚙️ How to Run the Code
