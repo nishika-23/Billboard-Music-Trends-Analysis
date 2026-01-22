@@ -66,12 +66,12 @@ git clone https://github.com/nishika-23/Billboard-Music-Trends-Analysis.git
 
 ### Step 4: Run the analysis
   - source("IDS_final.R")
-  - 
+
 ### Step 5: View outputs
   - After the script finishes, you will find:
-  ~ Figures: /plots/
-  ~ Tables: /output_tables/
-  ~ Model summary: output_model_summary.txt
+  . Figures: /plots/
+  . Tables: /output_tables/
+  . Model summary: output_model_summary.txt
 
   - All outputs are generated automatically from the script.
 
